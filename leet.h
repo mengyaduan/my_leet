@@ -19,3 +19,5 @@
 #include "leet414.h"
 #include "leet28.h"
 #include "leet204.h"
+#include "leet6.h"
+#include "leet168.h"

@@ -5,14 +5,25 @@ class Solution204 {
 public:
 	int countPrimes(int n) {
 		int sum = 0;
-		for (int i = 2; i < n;++i){
-			while (n%i == 0){
-				n /= i;
-			}
-			++sum;
+		int i = 2;
+		while (i < n){
+			if (isPrime(i))
+				++sum;
 			++i;
 		}
 		return sum;
+	}
+	bool isPrime(int x){
+		int temp = sqrt(x);
+		if (x == 2)
+			return true;
+		if (x % 2 == 0)
+			return false;
+		for (int i = 3; i <= temp; i = i + 2){
+			if (x%i == 0)
+				return false;
+		}
+		return true;
 	}
 };
 
