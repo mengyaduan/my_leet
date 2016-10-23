@@ -21,3 +21,5 @@
 #include "leet204.h"
 #include "leet6.h"
 #include "leet168.h"
+#include "leet412.h"
+#include "leet401.h"
